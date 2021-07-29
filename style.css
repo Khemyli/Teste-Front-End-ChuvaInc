@@ -1,0 +1,316 @@
+:root{
+    --laranja: #ED7839;
+    --bege: #FDF1EB;
+    --fontcolor: #725C5C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+}
+
+/* menu lateral*/
+
+.menu-conteiner{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    color: var(--fontcolor);
+}
+
+
+.menu-conteiner .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px ;
+    background: linear-gradient( 180deg, #FFB354 0%, #EE7A3A 100%);
+    height:70px;
+    width: 220px;
+
+}
+
+.menu-conteiner .imagem-logo{
+    height: 250px;
+    width: 200px;
+    align-items: center;
+}
+
+.menu-conteiner .menu-lateral{
+    border-right: 2px solid #E7E7E7;  
+}
+
+.menu-conteiner nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--fontcolor);
+    list-style: none;
+    text-align: center;
+    
+    border-bottom: 2px solid #E7E7E7;
+    width: 6.0em;
+    background: white;
+    padding: 0 0.2em 0.2em 0;
+    text-decoration: none;
+    height: 35px;
+    width: 220px;
+}
+
+nav a:hover{
+    background-color: var(--bege);
+    border-left: 4px solid var(--laranja);
+}
+
+/*base do contéudo principal*/
+.conteiner-principal{
+    float: right;
+    display: grid;
+    margin-left: 220px;
+    position: absolute;
+    flex-direction: column;
+    width: 85%;
+    
+
+}
+
+/*painel superior*/
+
+.conteiner-simposio{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 70px;
+    width: 100%;
+    background-color: #FDF1EB;
+    color: var(--fontcolor);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content:space-around;
+    margin-top: 15px;
+    cursor: pointer
+}
+
+.botao{
+    border: none;
+    height: max-content;
+    background-color: var(--bege);
+
+    cursor: pointer
+}
+
+.imagem-simposio{
+    height: 35px;
+}
+
+.simposio{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+    }
+
+.titulo-simposio{
+    font-size: 1.38rem;
+    margin-left: 15px;
+}
+
+.txt-simposio{
+    font-size: 0.87rem;
+    margin-left: 15px;
+}
+
+
+/* Conteúdo Principal*/
+
+.titulo-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.25rem ;
+    color: var(--laranja);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    width: 65%;
+    margin-left: 15px;
+    
+}
+
+.lateral{
+    float: right;
+    display: grid;
+    font-size: 0.87rem;
+    justify-content: space-around;
+    line-height: 35px;
+    align-items: center;
+}
+
+
+.botao-lateral{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-l{
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
+.botao-d{
+    color: white;
+    background-color: var(--laranja);
+    font-size: 1rem;
+    border: none;
+    height: 30px;
+    width: 125px;
+}
+
+.box-detalhes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    margin-right: 45px;
+    width: 220px;
+    height: 450px;
+    border: 1px solid #e7e7e7;
+    border-radius: 1px
+}
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bege) ;
+    
+    border-bottom: 1px solid #E7E7E7;
+    color:#4E4E4E;
+    font-size: 20px ;
+    height: 50px;
+}
+
+.texto-detalhes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    font-size: 12px;
+    line-height: 19px ;
+    color: var(--fontcolor);
+    
+}
+
+.titulo-detalhes{
+    margin-left: 10px;
+}
+
+.detalhes-texto{
+    margin: 10px;
+}
+
+.detalhes-autores{
+    margin: 10px;
+    font-family:monospace;
+}
+
+.detalhes-universidades{
+    margin: 10px;
+    color: lightgray;
+}
+
+.video{
+    position: absolute;
+    top: 23%;
+    display: grid;
+    justify-content: space-between;
+    margin-left: 52px;
+    background: linear-gradient(rgba(141, 53, 6, 0.5), rgba(141, 53, 6, 0.5)100%), url('../img/dewey\ 1.png'); 
+   
+    background-size: cover;
+    font-size: 20px;
+    width: 784px;
+    height: 439px;    
+}
+
+.video-txt{
+    margin: 30px;
+    font-size: 24px;
+    line-height: 25px;
+    color: white;
+}
+
+.video-descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+
+    margin-top: 80px;
+    margin-left: 30px;
+    color: white;
+}
+
+.descricao-txt h6{
+    font-size: 34px;
+}
+
+.video-descricao .img-descricao{
+    border: 1px solid var(--laranja);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+/*media queries*/
+
+@media (max-width: 1024px){
+    .video{
+        max-width: 50%;
+        max-height: 37%;
+    }   
+    
+    .conteiner-body{
+        width:76%  ;
+    }
+    .titulo-simposio{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    
+    .txt-simposio{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .imagem-simposio{
+        height: 27px;
+    }
+    .titulo-principal{
+        font-size: 15px;
+    }
+}
