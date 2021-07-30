@@ -1,7 +1,8 @@
 :root{
     --laranja: #ED7839;
     --bege: #FDF1EB;
-    --fontcolor: #725C5C;
+    --titlecolor: #725C5C;
+    --textcolor: #5c5c5c;
 }
 
 *{
@@ -22,7 +23,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 220px;
-    color: var(--fontcolor);
+    color: var(--titlecolor);
 }
 
 
@@ -59,9 +60,9 @@ body{
 }
 
 a{
-    color: var(--fontcolor);
+    color: var(--titlecolor);
     list-style: none;
-    text-align: center;
+    text-align:left;
     
     border-bottom: 2px solid #E7E7E7;
     width: 6.0em;
@@ -71,7 +72,11 @@ a{
     height: 35px;
     width: 220px;
 }
-
+a p{
+    margin-top: 10px;
+    margin-left: 20px ;
+    font-size: 14px;
+}
 nav a:hover{
     background-color: var(--bege);
     border-left: 4px solid var(--laranja);
@@ -98,7 +103,7 @@ nav a:hover{
     height: 70px;
     width: 100%;
     background-color: #FDF1EB;
-    color: var(--fontcolor);
+    color: var(--textcolor);
 }
 
 .botoes{
@@ -169,13 +174,13 @@ nav a:hover{
 }
 
 
-.botao-lateral{
+.lateral .botao-lateral{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.botao-l{
+.lateral .botao-l{
     background-color: var(--laranja);
     color: white;
     border: none;
@@ -183,7 +188,7 @@ nav a:hover{
     width: 30px;
 }
 
-.botao-d{
+.lateral .botao-d{
     color: white;
     background-color: var(--laranja);
     font-size: 1rem;
@@ -200,7 +205,7 @@ nav a:hover{
     width: 220px;
     height: 450px;
     border: 1px solid #e7e7e7;
-    border-radius: 1px
+    border-radius: 1%;
 }
 .detalhes{
     display: flex;
@@ -213,6 +218,10 @@ nav a:hover{
     height: 50px;
 }
 
+.detalhes h4{
+    margin-left: 10px;
+}
+
 .texto-detalhes{
     display: flex;
     flex-direction: column;
@@ -220,31 +229,27 @@ nav a:hover{
     
     font-size: 12px;
     line-height: 19px ;
-    color: var(--fontcolor);
+    color: var(--textcolor);
     
 }
 
-.titulo-detalhes{
-    margin-left: 10px;
-}
-
-.detalhes-texto{
+.texto-detalhes .apresentacao{
     margin: 10px;
 }
 
-.detalhes-autores{
+.texto-detalhes .autores{
     margin: 10px;
     font-family:monospace;
 }
 
-.detalhes-universidades{
+.texto-detalhes .universidades{
     margin: 10px;
     color: lightgray;
 }
 
 .video{
     position: absolute;
-    top: 23%;
+    top: 16.5%;
     display: grid;
     justify-content: space-between;
     margin-left: 52px;
@@ -275,7 +280,7 @@ nav a:hover{
     color: white;
 }
 
-.descricao-txt h6{
+.descricao-txt h5{
     font-size: 34px;
 }
 
@@ -285,6 +290,52 @@ nav a:hover{
     padding: 3px;
 }
 
+/*Resumo e Discussões*/
+
+.conteiner-resumo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 52px ;
+    border: 1px solid #E7E7E7;
+    border-radius: 1%;
+    width: 89%;
+}
+
+.titulo-resumo{
+    display: flex;
+    align-items: center;
+    background-color: var(--bege) ;
+    
+    border-bottom: 1px solid #E7E7E7;
+    color:#4E4E4E;
+    font-size: 20px ;
+    height: 50px;
+}
+
+.titulo-resumo h3{
+    margin-left: 15px;
+}
+
+.txt-resumo{
+    margin:15px;
+    color: var(--textcolor);
+}
+
+.hidden{
+    display:none;
+    justify-content: space-between;
+    margin:15px;
+    color: var(--textcolor);
+}
+
+#mostrar{
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: var(--laranja);
+
+}
 
 /*media queries*/
 
